@@ -1,0 +1,25 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ferrylight Dispatch</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap"><style>
+:root{--bg:#eef2f4;--surface:#f9fbfc;--ink:#13212b;--muted:#52646f;--line:#c3d0d7;--accent:#0b7a85;--good:#2b7a4b;--warn:#a96513}
+@media (prefers-color-scheme:dark){:root{--bg:#0b1520;--surface:#101e2b;--ink:#e2ebf0;--muted:#8a9eab;--line:#233646;--accent:#4fc4cf;--good:#5cc489;--warn:#e3a54b}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;padding:24px 16px}
+.flyer{max-width:860px;margin:0 auto;background:var(--surface);border:1px solid var(--ink)}
+.mast{display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between;align-items:baseline;padding:14px 20px;border-bottom:3px double var(--ink)}
+.brand{font:400 2.4rem/1 "Instrument Serif",Georgia,serif;letter-spacing:.02em}
+.meta{font:12px "IBM Plex Mono",ui-monospace,Menlo,monospace;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.sig{padding:8px 20px;border-bottom:1px solid var(--line);font:12px "IBM Plex Mono",ui-monospace,monospace;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.sig.ok::before,.sig.degraded::before,.sig.none::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:8px;background:var(--line)}
+.sig.ok::before{background:var(--good)}.sig.degraded::before{background:var(--warn)}
+.body{padding:18px 20px;display:flex;flex-direction:column;gap:18px}
+h2{font:400 2rem/1.1 "Instrument Serif",Georgia,serif;margin:0 0 6px;text-wrap:balance}
+h3{font:600 12px "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 10px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.cols{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}
+.item{margin-bottom:12px}.item b{display:block}
+.job{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 12px;margin-bottom:12px}
+.pay{font:500 13px "IBM Plex Mono",ui-monospace,monospace;white-space:nowrap}
+.jd{grid-column:1/-1;font-size:14px;color:var(--muted)}
+.over{border-top:1px dashed var(--line);padding-top:12px;font-style:italic;color:var(--muted)}
+.nosig{padding:24px 0;text-align:center;font:13px "IBM Plex Mono",ui-monospace,monospace;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+ul.idx{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+ul.idx a{color:var(--accent)}
+</style></head><body><article class="flyer"><div class="mast"><div class="brand">Ferrylight</div><div class="meta">Dispatch archive</div></div><div class="body"><ul class="idx"><li><a href="s0/">Edition S0: First boot</a> <span class="meta">Cutwater Anchorage</span></li></ul></div></article></body></html>
