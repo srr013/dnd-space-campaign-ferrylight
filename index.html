@@ -26,4 +26,18 @@ table{border-collapse:collapse;width:100%;font-size:14px}th{font:500 11px "IBM P
 .nosig{padding:24px 0;text-align:center;font:13px "IBM Plex Mono",ui-monospace,monospace;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
 ul.idx{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
 ul.idx a{color:var(--accent)}
+
+.toolbar{max-width:860px;margin:0 auto 12px;display:flex;gap:14px;align-items:center}
+.printbtn{font:500 14px "IBM Plex Sans",system-ui,sans-serif;background:var(--accent);color:var(--bg);border:0;padding:9px 16px;cursor:pointer}
+.printbtn:focus-visible,.toolbar a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.toolbar a{color:var(--accent);font-size:14px}
+@media print{
+ :root{--bg:#fff;--surface:#fff;--ink:#000;--muted:#333;--line:#888;--accent:#000;--good:#000;--warn:#000}
+ @page{size:letter;margin:.5in}
+ body{padding:0;background:#fff;color:#000;font-size:11pt}
+ .toolbar{display:none}
+ .flyer{max-width:none;border:1.5px solid #000;break-inside:avoid}
+ .cols{grid-template-columns:1fr 1fr}
+ a{color:#000}
+}
 </style></head><body><article class="flyer"><div class="mast"><div class="brand">The Ferrylight Dispatch</div><div class="meta">Archive</div></div><div class="body"><ul class="idx"><li><a href="s0/">Edition S0: Cutwater board</a> <span class="meta">Cutwater Anchorage</span></li></ul></div></article></body></html>
