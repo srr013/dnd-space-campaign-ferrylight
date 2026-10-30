@@ -1,0 +1,46 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Ferrylight Dispatch, S1</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap"><style>
+:root{--bg:#eef2f4;--surface:#f9fbfc;--ink:#13212b;--muted:#52646f;--line:#c3d0d7;--accent:#0b7a85;--good:#2b7a4b;--warn:#a96513}
+@media (prefers-color-scheme:dark){:root{--bg:#0b1520;--surface:#101e2b;--ink:#e2ebf0;--muted:#8a9eab;--line:#233646;--accent:#4fc4cf;--good:#5cc489;--warn:#e3a54b}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;padding:24px 16px}
+.flyer{max-width:860px;margin:0 auto;background:var(--surface);border:1px solid var(--ink)}
+.mast{display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between;align-items:baseline;padding:14px 20px;border-bottom:3px double var(--ink)}
+.brand{font:400 2.4rem/1 "Instrument Serif",Georgia,serif;letter-spacing:.02em}
+.meta{font:12px "IBM Plex Mono",ui-monospace,Menlo,monospace;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.sig{padding:8px 20px;border-bottom:1px solid var(--line);font:12px "IBM Plex Mono",ui-monospace,monospace;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.sig.ok::before,.sig.degraded::before,.sig.none::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:8px;background:var(--line)}
+.sig.ok::before{background:var(--good)}.sig.degraded::before{background:var(--warn)}
+.body{padding:18px 20px;display:flex;flex-direction:column;gap:18px}
+h2{font:400 2rem/1.1 "Instrument Serif",Georgia,serif;margin:0 0 6px;text-wrap:balance}
+h3{font:600 12px "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 10px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.cols{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}
+.item{margin-bottom:12px}.item b{display:block}
+.job{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 12px;margin-bottom:12px}
+.pay{font:500 13px "IBM Plex Mono",ui-monospace,monospace;white-space:nowrap}
+.jd{grid-column:1/-1;font-size:14px;color:var(--muted)}
+.over{border-top:1px dashed var(--line);padding-top:12px;font-style:italic;color:var(--muted)}
+.stack{display:flex;flex-direction:column;gap:18px;min-width:0}
+.sponsor{border:1px solid var(--line);padding:10px 12px}.sponsor h3{border:0;margin:0 0 6px;padding:0}.sponsor b{display:block}
+table{border-collapse:collapse;width:100%;font-size:14px}th{font:500 11px "IBM Plex Mono",ui-monospace,monospace;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);text-align:left;padding:5px 8px;border-bottom:1px solid var(--line)}td{padding:5px 8px;border-bottom:1px solid var(--line)}td.num{font-family:"IBM Plex Mono",ui-monospace,monospace;white-space:nowrap}.scroll{overflow-x:auto}
+.photo{margin:0;border-bottom:1px solid var(--line)}.photo img{display:block;width:100%;height:clamp(150px,32vw,260px);object-fit:cover;object-position:50% 42%}
+.photo figcaption{padding:6px 20px;font:12px "IBM Plex Mono",ui-monospace,monospace;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.foot{font:12px "IBM Plex Mono",ui-monospace,monospace;color:var(--muted);border-top:1px dashed var(--line);padding-top:12px}
+.nosig{padding:24px 0;text-align:center;font:13px "IBM Plex Mono",ui-monospace,monospace;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+ul.idx{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+ul.idx a{color:var(--accent)}
+
+.toolbar{max-width:860px;margin:0 auto 12px;display:flex;gap:14px;align-items:center}
+.printbtn{font:500 14px "IBM Plex Sans",system-ui,sans-serif;background:var(--accent);color:var(--bg);border:0;padding:9px 16px;cursor:pointer}
+.printbtn:focus-visible,.toolbar a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.toolbar a{color:var(--accent);font-size:14px}
+@media print{
+ :root{--bg:#fff;--surface:#fff;--ink:#000;--muted:#333;--line:#888;--accent:#000;--good:#000;--warn:#000}
+ @page{size:letter;margin:.5in}
+ body{padding:0;background:#fff;color:#000;font-size:11pt}
+ .toolbar{display:none}
+ .flyer{max-width:none;border:1.5px solid #000;break-inside:avoid}
+ .cols{grid-template-columns:1fr 1fr}
+ .photo img{height:2.3in}
+ a{color:#000}
+}
+</style></head><body><div class="toolbar"><button class="printbtn" onclick="window.print()">Print this issue</button><a href="../">All issues</a></div><article class="flyer"><div class="mast"><div class="brand">The Ferrylight Dispatch</div></div><div class="sig ok">CUTWATER ANCHORAGE EDITION • KESTREL SYSTEM • FREE WITH ANY DOCK FEE &middot; Signal normal</div><div class="body"><div class="cols"><div class="stack"><div><h3>Jobs nearby</h3><div class="job"><b>Unclaimed Salvage — Skeinstone Belt</b><span class="pay">~60 marks/person after runabout fee</span><span class="jd">Wreck signature detected, sector coordinates attached. No charter filed — proceed with normal caution. Posted by S. Vale, Compact-verified. <b>Time: 8 hrs.</b></span></div><div class="job"><b>Conduit Reseal — Cutwater East Ring</b><span class="pay">15 marks/person</span><span class="jd">Half-day job, tools provided on-site. No experience required — just don't cross-thread the fittings this time. <b>Time: 4 hrs.</b></span></div><div class="job"><b>Parts Run — Halyard Farmstead</b><span class="pay">20 marks/person</span><span class="jd">Deliver sealed crate to drop point, no questions asked. Buyer waiting. <b>Time: 2 hrs.</b></span></div><div class="job"><b>Wayglass Calibration — Saltern Dock 9</b><span class="pay">25 marks/person</span><span class="jd">Independent navigator needs a second set of hands for a half-day. Steady grip required. <b>Time: 4 hrs.</b></span></div></div><div class="sponsor"><h3>Sponsored</h3><b>Ironveil Supply Depot — Saltern Branch</b><div>Void-suit liners, 15% off this cycle only. Marrow-certified skeinstone batteries now in stock, while supplies last.</div></div></div><div class="stack"><div><h3>Departures</h3><div class="scroll"><table><thead><tr><th>Dest.</th><th>Ship</th><th>Time</th><th>Fare</th></tr></thead><tbody><tr><td>Ashwake</td><td>Long Reach</td><td class="num">0600</td><td class="num">5 mk</td></tr><tr><td>Saltern</td><td>Fair Wind</td><td class="num">0800</td><td class="num">8 mk</td></tr><tr><td>Verdance</td><td>Choir's Grace</td><td class="num">1200</td><td class="num">20 mk</td></tr><tr><td>Ironveil</td><td>Ironbound Frt. 12</td><td class="num">1400</td><td class="num">18 mk</td></tr><tr><td>Docent</td><td>restricted</td><td class="num">—</td><td class="num">—</td></tr></tbody></table></div></div><div><h3>News in brief</h3><div class="item"><b>Concordat Announces New Refinery Quota</b>Ironveil officials tout record skeinstone output for the cycle, third consecutive increase.</div><div class="item"><b>Circle Sailcraft Race Postponed</b>The annual Choir moon regatta delayed a second time; organizers cite unfavorable currents.</div><div class="item"><b>Verity Lamp Rings Four Hours With No One in Range</b>The Registry calls it sensor drift. Residents have moved out of three blocks.</div><div class="item"><b>Saltern Market Report</b>Skeinstone spot prices dip slightly this cycle; analysts call it seasonal.</div><div class="item"><b>Halyard Harvest Festival Announced</b>Independent world's autumn gathering set for next cycle, all crews welcome.</div></div></div></div><div class="foot">Ferrylight — available on any personal console. Sponsored listings may appear above unsponsored results.</div></div></article></body></html>
